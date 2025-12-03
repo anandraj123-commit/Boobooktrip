@@ -1,0 +1,884 @@
+@import "variables";
+
+.hero-section {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url("/images/profile-image.jpg") center/cover no-repeat;
+    animation: bulge 12s ease-in-out infinite;
+    z-index: 0;
+  }
+  h1 {
+    color: #fff;
+    font-weight:200;
+    
+  }
+
+  h4 {
+    color:aqua;
+  }
+
+  label, i {
+    color: #e63950;
+  }
+
+  .overlay-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: $white-color;
+    top: 15%;
+    font-family: $font-body;
+
+    h1 {
+      font-family: $font-heading;
+    }
+  }
+
+  .search-box {
+    background: $white-color;
+    padding: $search-box-padding;
+    border-radius: $search-box-radius;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    .icon {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+
+    .search-btn {
+      background: $primary-color;
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: $white-color;
+        font-size: 22px;
+      }
+    }
+  }
+
+  @keyframes bulge {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+/* ============================================
+   RESPONSIVE FIX — up to 768px
+   ============================================ */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto !important;
+    padding-bottom: 40px;
+    overflow: visible !important;
+
+    .overlay-content {
+      top: 5% !important;
+      padding: 0 15px;
+    }
+
+    .search-box {
+      margin-top: 25px;
+      padding: 18px !important;
+
+      .row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px;
+      }
+
+      .col-md-3,
+      .col-md-2,
+      .col-md-1 {
+        width: 100% !important;
+        display: block !important;
+      }
+
+      input,
+      select {
+        height: 48px !important;
+        font-size: 15px !important;
+      }
+
+      /* SEARCH BUTTON FIX */
+      .col-md-1 {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-top: 10px;
+      }
+
+      .search-btn {
+        width: 100% !important;
+        height: 52px !important;
+        border-radius: 10px !important;
+      }
+    }
+  }
+}
+
+/* ============================================
+   SMALL DEVICES — up to 480px
+   ============================================ */
+@media (max-width: 480px) {
+  .hero-section {
+    .overlay-content h1 {
+      font-size: 28px !important;
+      line-height: 1.3;
+    }
+
+    .search-box {
+      padding: 15px !important;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+.top-destinations {
+  background: #fff;
+
+  /* Heading */
+  .section-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .section-title span {
+    color: #e63950;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: #555;
+  }
+
+  /* Divider */
+  .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+  }
+
+  .divider:before,
+  .divider:after {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background: #ccc;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    background: #e6b800;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+
+  /* Cards */
+  .destination-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Hover brightens image */
+  .destination-card:hover img {
+    filter: brightness(1.25);
+    transform: scale(1.03);
+  }
+
+  /* Dark overlay */
+  .destination-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+  }
+
+  /* Content */
+  .destination-card .content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    text-align: left;
+  }
+
+  .destination-card .content h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .destination-card .content p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  /* Europe Large Card */
+  .large-card {
+    height: 380px;
+  }
+
+  .large-card img {
+    height: 100%;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///
+
+/* Exact same blue background from screenshot */
+#travelcondition {
+  background: #75ccf4; /* SKY BLUE COLOR from your screenshot */
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .section-title {
+    background: #1976d2;
+    padding: 8px 20px;
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 22px;
+  }
+
+  /* LEFT COLUMN ICON BOX */
+  .tip-icon {
+    width: 85px;
+    height: 85px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    color: #2b72bb;
+  }
+
+  /* TESTIMONIAL IMAGE */
+  .user-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+  }
+
+  /* ARRANGEMENT BOXES */
+  .help-box {
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    gap: 10px;
+  }
+
+  .help-box i {
+    font-size: 38px;
+    color: white;
+  }
+
+  .help-box.green {
+    background: #a6e48f;
+  }
+
+  .help-box.purple {
+    background: #c5a5ff;
+  }
+
+  .help-box.red {
+    background: #ff7b7b;
+  }
+
+  .help-box.yellow {
+    background: #ffcb6b;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+/* ---------------------------
+   CONTAINER & TEXT
+---------------------------- */
+/* ---------------------------
+   CONTAINER & HEADINGS
+---------------------------- */
+/* ---------------------------
+   CONTAINER & HEADINGS
+---------------------------- */
+.slider-container {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  .heading {
+    font-size: 40px;
+    color: #1d3557;
+    font-weight: 700;
+  }
+
+  .heading span {
+    color: #e63946;
+  }
+
+  .sub-heading {
+    margin-top: 10px;
+    color: #6c6c6c;
+    font-size: 15px;
+  }
+
+  /* ---------------------------
+   SWIPER MAIN AREA
+---------------------------- */
+  .mySwiper {
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+  }
+
+  /* ---------------------------
+   SLIDE CARD DESIGN
+---------------------------- */
+  .slide {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  /* Bulge effect on hover */
+  .slide:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .slide:hover img {
+    transform: scale(1.05);
+  }
+
+  .slide-content {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .slide-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .tag {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 9px 20px;
+    background: linear-gradient(to right, #0052d4, #00aaff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  /* ---------------------------
+   PAGINATION (LINES BELOW SLIDER)
+---------------------------- */
+  .custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Pagination lines */
+  .custom-pagination .swiper-pagination-bullet {
+    width: 40px !important;
+    height: 6px !important;
+    border-radius: 10px !important;
+    background: #d3d3d3 !important;
+    margin: 0 6px !important;
+    opacity: 1 !important;
+    transition: 0.3s ease;
+  }
+
+  /* Active line */
+  .custom-pagination .swiper-pagination-bullet-active {
+    background: #ffb400 !important;
+    width: 60px !important;
+  }
+
+  /* ---------------------------
+   RESPONSIVE
+---------------------------- */
+  @media (max-width: 1024px) {
+    .mySwiper {
+      padding: 30px 30px;
+    }
+
+    .slide {
+      height: 330px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mySwiper {
+      padding: 20px 20px;
+    }
+
+    .slide {
+      height: 300px;
+    }
+
+    .swiper-slide {
+      width: auto !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .slide {
+      height: 260px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet {
+      width: 28px !important;
+    }
+
+    .custom-pagination .swiper-pagination-bullet-active {
+      width: 40px !important;
+    }
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+//* ===========================================
+GLOBAL SECTION STYLES
+
+#getInTouch {
+position: relative;
+color: white;
+}
+
+#getInTouch .overlay {
+width: 100%;
+height: 100%;
+}
+
+/* ===========================================
+BUTTON STYLES
+=========================================== */
+.title-btn {
+padding: 8px 18px;
+font-size: 14px;
+border-radius: 20px;
+border: none;
+background: #00bfff;
+color: #fff;
+font-weight: 600;
+letter-spacing: 1px;
+}
+
+.btn-custom {
+padding: 10px 22px;
+font-size: 17px;
+border-radius: 30px;
+font-weight: 600;
+}
+
+/* ===========================================
+HELP LINE BOX
+=========================================== */
+.help-line-box {
+padding: 12px 16px;
+border-left: 4px solid #00bfff;
+background: rgba(255, 255, 255, 0.07);
+border-radius: 6px;
+font-size: 17px;
+backdrop-filter: blur(4px);
+}
+
+/* ===========================================
+ANIMATED IMAGE WRAPPER
+=========================================== */
+.animated-image-wrapper {
+width: 100%;
+overflow: hidden;
+border-radius: 18px;
+perspective: 1200px;
+position: relative;
+display: block;
+margin-top: 20px;
+}
+
+/* Idle Floating Animation */
+.animated-img {
+width: 100%;
+height: auto;
+border-radius: 18px;
+display: block;
+
+transition:
+ transform 0.9s ease,
+ filter 0.9s ease,
+ box-shadow 0.9s ease;
+
+transform-origin: center;
+animation: floatingEffect 6s ease-in-out infinite;
+}
+
+/* On Hover: 3D Tilt + Zoom + Glow */
+.animated-image-wrapper:hover .animated-img {
+transform: scale(1.15) rotate3d(1, 1, 0, 14deg);
+filter: brightness(1.2) saturate(1.3);
+box-shadow: 0px 25px 55px rgba(0, 180, 255, 0.55);
+}
+
+/* Floating idle motion */
+@keyframes floatingEffect {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-8px); }
+100% { transform: translateY(0px); }
+}
+
+/* ===========================================
+RESPONSIVE TWEAKS
+=========================================== */
+
+@media (max-width: 768px) {
+.animated-img {
+ animation: none;
+}
+
+.animated-image-wrapper {
+ margin-top: 40px;
+}
+
+#getInTouch {
+ padding: 30px 0 !important;
+}
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+.budget-package {
+  background: linear-gradient(to right, rgba(7, 31, 83, 0.9), rgba(255, 255, 255, 0)),
+              url('https://images.unsplash.com/photo-1517868163147-354953b386fe?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: white;
+  position: relative;
+
+
+/* Stars */
+.stars-box {
+  background: #ff375f;
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* Icons Row */
+.icon-box {
+  background: #ff3b5c;
+  padding: 18px;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.icon-label {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Go Stays Circle */
+.mini-circle {
+  width: 122px;
+  height: 122px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  right: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Rotate on hover */
+.mini-circle:hover {
+  transform: rotate(360deg);
+}
+
+.mini-circle small {
+  margin-top: -8px;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+/* Big Offer Circle */
+.big-circle {
+  width: 260px;
+  height: 260px;
+  background: #ff375f;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: 6%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.offer-code {
+  border: 1px solid white;
+  padding: 6px 18px;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.big-circle:hover{
+  background:rgb(244,186,54);
+  transition:all 0.5s ease 0s;
+}
+
+.nav-underline {
+  display: inline-block !important;
+  position: relative !important;
+  color: black !important;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* ===========================
+   TOP SIGHT SEEING SECTION
+=========================== */
+
+.sight-section {
+  background: linear-gradient(rgb(242, 249, 255), rgb(225, 228, 232));
+  padding: 80px 0;
+
+
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-title .highlight {
+  color: rgb(244, 54, 79);
+}
+
+.section-subtitle {
+  color: #777;
+  margin: 10px auto 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.decor-dot {
+  width: 10px;
+  height: 10px;
+  background: rgb(244, 54, 79);
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+
+/* ===========================
+       PACKAGE CARD
+=========================== */
+
+.package-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* IMAGE STYLING */
+.package-img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.5s ease,
+              box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+/* UNIQUE HOVER ANIMATION */
+.package-card:hover .package-img {
+  transform: scale(1.15) rotateX(12deg) rotateY(-12deg);
+  box-shadow: 0px 20px 35px rgba(255, 123, 0, 0.25);
+  filter: brightness(1.1) saturate(1.2);
+}
+
+/* FLOATING LIFT CARD EFFECT */
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================
+        TEXT STYLES
+=========================== */
+
+.pkg-head {
+  font-size: 14px;
+  color: rgb(244, 54, 79);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.pkg-days {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+.pkg-text {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.info-btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: rgb(244, 54, 79);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.info-btn:hover {
+  background: #e86e00;
+}
+
+/* ===========================
+     RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 768px) {
+  .package-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .package-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+}

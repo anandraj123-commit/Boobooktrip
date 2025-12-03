@@ -1,0 +1,517 @@
+.trip-cover-page{
+.trip-banner {
+    background: url("/images/trip_banner.jpg")
+      center/cover no-repeat;
+    height: 380px;
+    position: relative;
+  
+}
+  .trip-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  
+  .trip-banner .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .banner-title .highlight {
+    color: #ff4d6d;
+  }
+  
+  .divider {
+    width: 120px;
+    height: 3px;
+    background: #ff4d6d;
+    margin: 10px auto;
+  }
+  
+  .banner-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .breadcrumb-nav {
+    font-size: 16px;
+  }
+  
+  .breadcrumb-link {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .breadcrumb-link:hover {
+    opacity: 1;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 6px;
+  }
+  
+  .breadcrumb-current {
+    opacity: 0.7;
+  }
+}
+  
+
+  ///////////////////////////////////////////////////////////////////////////////////
+
+  /* ---------- PACKAGE CARD LEFT SIDE ---------- */
+
+/* -----------------------------------------------------
+   GLOBAL HEIGHT FIX FOR TWO-COLUMN LAYOUT
+----------------------------------------------------- */
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+/* -----------------------------------------------------
+   LEFT SIDE – PACKAGE IMAGE CARD
+----------------------------------------------------- */
+.package-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.package-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Discount Badge */
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ffb700;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Title on Image */
+.package-title {
+  position: absolute;
+  bottom: 95px;
+  left: 25px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Price Tag */
+.price-tag {
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+  background: #ff8c00;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.duration {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+/* Book Now Button */
+.book-btn {
+  background: linear-gradient(to right, #005bea, #00c6fb);
+  color: #ffffff;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* -----------------------------------------------------
+   RIGHT SIDE – DETAILS & FORM
+----------------------------------------------------- */
+
+/* Gray Date Badges */
+.date-badge {
+  background: #f1f1f1;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Icon size inside locations list */
+.list-unstyled li i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/* Action Buttons */
+.btn-danger {
+  padding: 10px 25px;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.btn-outline-dark {
+  padding: 10px 25px;
+  font-size: 17px;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+/* Form box always attaches at bottom of right side */
+.form-box {
+  margin-top: auto;
+  background: #f8f8f8 !important;
+}
+
+/* -----------------------------------------------------
+   RESPONSIVENESS
+----------------------------------------------------- */
+@media (max-width: 992px) {
+  .package-card {
+    height: 420px;
+  }
+
+  .package-img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .package-card {
+    height: 350px;
+  }
+
+  .package-img {
+    height: 350px;
+  }
+
+  .package-title {
+    font-size: 26px;
+    bottom: 80px;
+  }
+
+  .price-tag {
+    font-size: 16px;
+    bottom: 55px;
+  }
+
+  .book-btn {
+    font-size: 16px;
+  }
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Exact same blue background from screenshot */
+#travelcondition {
+  background: #75ccf4; /* SKY BLUE COLOR from your screenshot */
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .section-title {
+    background: #1976d2;
+    padding: 8px 20px;
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 22px;
+  }
+
+  /* LEFT COLUMN ICON BOX */
+  .tip-icon {
+    width: 85px;
+    height: 85px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    color: #2b72bb;
+  }
+
+  /* TESTIMONIAL IMAGE */
+  .user-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+  }
+
+  /* ARRANGEMENT BOXES */
+  .help-box {
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    gap: 10px;
+  }
+
+  .help-box i {
+    font-size: 38px;
+    color: white;
+  }
+
+  .help-box.green {
+    background: #a6e48f;
+  }
+
+  .help-box.purple {
+    background: #c5a5ff;
+  }
+
+  .help-box.red {
+    background: #ff7b7b;
+  }
+
+  .help-box.yellow {
+    background: #ffcb6b;
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+.trip-booking-box {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffffdd; /* slightly transparent white */
+  border-radius: 10px;
+
+
+.book-now-btn {
+  background: linear-gradient(90deg, #396afc, #2948ff);
+  border: none;
+  font-size: 1.1rem;
+}
+
+.book-now-btn:hover {
+  opacity: 0.9;
+}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/* ---------------------------
+   CONTAINER & TEXT
+---------------------------- */
+/* ---------------------------
+   CONTAINER & HEADINGS
+---------------------------- */
+/* ---------------------------
+   CONTAINER & HEADINGS
+---------------------------- */
+.slider-container {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  .heading {
+    font-size: 40px;
+    color: #1d3557;
+    font-weight: 700;
+  }
+
+  .heading span {
+    color: #e63946;
+  }
+
+  .sub-heading {
+    margin-top: 10px;
+    color: #6c6c6c;
+    font-size: 15px;
+  }
+
+  /* ---------------------------
+   SWIPER MAIN AREA
+---------------------------- */
+  .mySwiper {
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+  }
+
+  /* ---------------------------
+   SLIDE CARD DESIGN
+---------------------------- */
+  .slide {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  /* Bulge effect on hover */
+  .slide:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .slide:hover img {
+    transform: scale(1.05);
+  }
+
+  .slide-content {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .slide-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .tag {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 9px 20px;
+    background: linear-gradient(to right, #0052d4, #00aaff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  /* ---------------------------
+   PAGINATION (LINES BELOW SLIDER)
+---------------------------- */
+  .custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Pagination lines */
+  .custom-pagination .swiper-pagination-bullet {
+    width: 40px !important;
+    height: 6px !important;
+    border-radius: 10px !important;
+    background: #d3d3d3 !important;
+    margin: 0 6px !important;
+    opacity: 1 !important;
+    transition: 0.3s ease;
+  }
+
+  /* Active line */
+  .custom-pagination .swiper-pagination-bullet-active {
+    background: #ffb400 !important;
+    width: 60px !important;
+  }
+
+  /* ---------------------------
+   RESPONSIVE
+---------------------------- */
+  @media (max-width: 1024px) {
+    .mySwiper {
+      padding: 30px 30px;
+    }
+
+    .slide {
+      height: 330px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mySwiper {
+      padding: 20px 20px;
+    }
+
+    .slide {
+      height: 300px;
+    }
+
+    .swiper-slide {
+      width: auto !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .slide {
+      height: 260px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet {
+      width: 28px !important;
+    }
+
+    .custom-pagination .swiper-pagination-bullet-active {
+      width: 40px !important;
+    }
+  }
+}
+
+
+
+
+/////////////////////////////////tripsection/////////////////
+
+.equal-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row.g-0 > [class*="col-"] {
+  padding: 0 !important; /* remove gap between left & right */
+}
+
+.bg-cover {
+  position: relative;
+}

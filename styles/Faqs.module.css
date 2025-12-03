@@ -1,0 +1,45 @@
+.faqHeroSection {
+    background-color: #0c1a49;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Outer container with orange border */
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+  }
+  
+  .imageContainer::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    border: 3px solid #ff6f4a;
+    border-radius: 25px;
+    pointer-events: none;
+  }
+  
+  /* Background Image */
+  .bgImage {
+    width: 100%;
+    border-radius: 20px;
+    filter: blur(2px);
+    opacity: 0.85;
+  }
+  
+  /* Foreground Image */
+  .frontImage {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 70%;
+    border-radius: 20px;
+  }
+  

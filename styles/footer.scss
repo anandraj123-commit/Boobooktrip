@@ -1,0 +1,161 @@
+
+/* FOOTER */
+footer {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #ddd;
+    background: #070707;
+    padding: 50px 20px;
+
+
+/* OFFER SECTION */
+.offer-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.offer-card {
+    position: relative;
+    width: 420px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.offer-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.offer-content h2 span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.offer-content h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.offer-content h3 {
+    margin: 8px 0;
+}
+
+.offer-content p {
+    margin: 5px 0 15px;
+}
+
+.btn {
+    background: #ff2a4a;
+    padding: 10px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* POPULAR VACATIONS */
+.vacation-section {
+    margin-bottom: 50px;
+}
+
+.vacation-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #222;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* GRID */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.phone {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.icon {
+    background: #222;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.footer-col ul {
+    columns: 2;           /* Split list into 2 columns */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 30px;     /* Space between columns */
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 6px 20px;
+    list-style: none;
+    padding: 0;
+    }
+    
+    
+    .social-icons i {
+    font-size: 22px;
+    margin-right: 12px;
+    cursor: pointer;
+    }
+    .social-icons i:hover {
+    transition: 0.3s ease;
+    }
+    
+    
+    .social-icons .fa-facebook:hover { color: #1877f2; }
+    .social-icons .fa-twitter:hover { color: #1da1f2; }
+    .social-icons .fa-instagram:hover { color: #e4405f; }
+    .social-icons .fa-youtube:hover { color: #ff0000; }
+    .social-icons .fa-linkedin:hover { color: #0a66c2; }
+}

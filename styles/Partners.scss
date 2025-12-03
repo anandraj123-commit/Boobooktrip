@@ -1,0 +1,38 @@
+.partners-section {
+    background: #d86868;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #000;
+  }
+  
+  .partner-box {
+    background: #d3d3d3;
+    border-radius: 6px;
+    height: 150px;       /* equal height */
+    width: 100%;         /* full column width */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    transition: 0.3s;
+  }
+  
+  .partner-box img {
+    max-height: 80px;     /* all logos same height */
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+  }
+  
+  .partner-box:hover {
+    transform: scale(1.05);
+  }
+  

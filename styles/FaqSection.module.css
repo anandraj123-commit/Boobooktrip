@@ -1,0 +1,23 @@
+.faqBox {
+    background: #f4f5f8;
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .faqBox:hover {
+    background: #ebecf0;
+  }
+  
+  .plusIcon {
+    font-size: 24px;
+    color: #ff6b35;
+    font-weight: bold;
+  }
+  
+  .answerBox {
+    background: #ffffff;
+    border-left: 4px solid #ff6b35;
+    border-radius: 6px;
+  }
+  

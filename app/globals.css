@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.social-icon a,
+.social-icon,
+.social-icon * {
+  text-decoration: none !important;
+}
+
+.social-row a {
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}

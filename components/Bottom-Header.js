@@ -10,7 +10,6 @@ export default function BottomHeader() {
   const [sticky, setSticky] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  // Separate states for each dropdown
   const [openTripsDropdown, setOpenTripsDropdown] = useState(false);
   const [openDestinationsDropdown, setOpenDestinationsDropdown] = useState(false);
 
@@ -24,22 +23,37 @@ export default function BottomHeader() {
     <>
       {/* HEADER */}
       <div className={`bottom-header ${sticky ? "sticky-header" : ""}`}>
-        {/* LOGO */}
-        <div className="bh-logo-container">
-           <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} /> 
-           <div className="logo-text"> 
-            <span className="bh-title">BOOBOOK TRIP</span> 
-            </div> </div>
+        {/* LOGO + TEXT */}
+        <div className="bh-logo-container" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          {/* Logo */}
+          <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} />
+
+          {/* Title + Tagline */}
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}>BOOBOOK TRIP</span>
+            <span
+              style={{
+                fontFamily: "'Brush Script MT', cursive",
+                fontSize: "0.85rem",
+                color: "#e73348",
+                fontWeight: 500,
+                letterSpacing: "0.5px",
+                animation: "fadeMove 2s ease-in-out infinite alternate",
+                marginTop: "0px",
+              }}
+            >
+              Making Trip Planning Easier For You
+            </span>
+          </div>
+        </div>
 
         {/* DESKTOP NAV */}
         <nav className="desktop-nav">
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
 
-          {/* DESKTOP DROPDOWN - TRIPS */}
           <div className="dropdown">
             <span className="dropdown-title">Tour Trips ▾</span>
-
             <div className="dropdown-menu">
               {tripLists.map((trip) => (
                 <Link key={trip.id} href={`/trip/${trip.slug}`} className="dropdown-item">
@@ -50,17 +64,11 @@ export default function BottomHeader() {
             </div>
           </div>
 
-          {/* DESKTOP DROPDOWN - DESTINATIONS */}
           <div className="dropdown">
             <span className="dropdown-title">Destinations ▾</span>
-
             <div className="dropdown-menu">
               {destinationsLists.map((destination) => (
-                <Link
-                  key={destination.id}
-                  href={`/destinations/${destination.slug}`}
-                  className="dropdown-item"
-                >
+                <Link key={destination.id} href={`/destinations/${destination.slug}`} className="dropdown-item">
                   <span>{destination.name}</span>
                 </Link>
               ))}
@@ -70,7 +78,6 @@ export default function BottomHeader() {
           <Link href="/contact-us">Contact Us</Link>
         </nav>
 
-        {/* HAMBURGER */}
         <button className="bh-hamburger" onClick={() => setOpenSidebar(true)}>
           ☰
         </button>
@@ -87,12 +94,10 @@ export default function BottomHeader() {
         <button className="sidebar-close" onClick={() => setOpenSidebar(false)}>
           ✖
         </button>
-
         <nav className="sidebar-links">
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
 
-          {/* MOBILE DROPDOWN - TRIPS */}
           <div className="mobile-dropdown">
             <button
               className="mobile-dropdown-title"
@@ -100,7 +105,6 @@ export default function BottomHeader() {
             >
               Tour Trips {openTripsDropdown ? "▲" : "▼"}
             </button>
-
             {openTripsDropdown && (
               <div className="mobile-dropdown-menu">
                 {tripLists.map((trip) => (
@@ -113,7 +117,6 @@ export default function BottomHeader() {
             )}
           </div>
 
-          {/* MOBILE DROPDOWN - DESTINATIONS */}
           <div className="mobile-dropdown">
             <button
               className="mobile-dropdown-title"
@@ -121,15 +124,10 @@ export default function BottomHeader() {
             >
               Destinations {openDestinationsDropdown ? "▲" : "▼"}
             </button>
-
             {openDestinationsDropdown && (
               <div className="mobile-dropdown-menu">
                 {destinationsLists.map((destination) => (
-                  <Link
-                    key={destination.id}
-                    href={`/destinations/${destination.slug}`}
-                    className="mobile-dropdown-item"
-                  >
+                  <Link key={destination.id} href={`/destinations/${destination.slug}`} className="mobile-dropdown-item">
                     <span>{destination.name}</span>
                   </Link>
                 ))}
@@ -141,9 +139,8 @@ export default function BottomHeader() {
         </nav>
       </aside>
 
-      {/* CSS */}
+      {/* INLINE CSS */}
       <style jsx>{`
-        /* HEADER */
         .bottom-header {
           background: #ffffff;
           padding: 12px 20px;
@@ -164,19 +161,6 @@ export default function BottomHeader() {
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .bh-logo-container {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-
-        .bh-title {
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #333;
-        }
-
-        /* DESKTOP NAV */
         .desktop-nav {
           display: flex;
           flex-direction: row;
@@ -200,7 +184,6 @@ export default function BottomHeader() {
           border-radius: 4px;
         }
 
-        /* DESKTOP DROPDOWN (HOVER) */
         .dropdown {
           position: relative;
         }
@@ -239,7 +222,6 @@ export default function BottomHeader() {
           color: white;
         }
 
-        /* HAMBURGER */
         .bh-hamburger {
           font-size: 28px;
           background: none;
@@ -259,7 +241,6 @@ export default function BottomHeader() {
           }
         }
 
-        /* MOBILE SIDEBAR */
         .mobile-sidebar {
           position: fixed;
           right: -300px;
@@ -287,7 +268,6 @@ export default function BottomHeader() {
           margin-bottom: 20px;
         }
 
-        /* MOBILE LINKS */
         .sidebar-links a,
         .mobile-dropdown-title {
           width: 100%;
@@ -325,7 +305,6 @@ export default function BottomHeader() {
           color: #fff;
         }
 
-        /* OVERLAY */
         .sidebar-overlay {
           position: fixed;
           width: 100%;
@@ -342,6 +321,12 @@ export default function BottomHeader() {
         .sidebar-overlay.show {
           opacity: 1;
           pointer-events: all;
+        }
+
+        @keyframes fadeMove {
+          0% { transform: translateY(0px); opacity: 0.6; }
+          50% { transform: translateY(2px); opacity: 0.9; }
+          100% { transform: translateY(0px); opacity: 1; }
         }
       `}</style>
     </>

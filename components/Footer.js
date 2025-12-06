@@ -10,8 +10,8 @@ export default function Footer() {
                         alt="Offer Image"
                     />
                     <div className="offer-content">
-                        <h2><span>30%</span> OFF</h2>
-                        <h3>Port Blair, Andaman & Nicobar</h3>
+                        <h2><span>5%</span> OFF</h2>
+                        <h3>Visit Andaman</h3>
                         <p>Valid only for 15th Dec</p>
                         <a href="#" className="btn">Ask For</a>
                     </div>
@@ -23,8 +23,8 @@ export default function Footer() {
                         alt="Offer Image"
                     />
                     <div className="offer-content">
-                        <h2><span>42%</span> OFF</h2>
-                        <h3>Havelock Island</h3>
+                        <h2><span>10%</span> OFF</h2>
+                        <h3>Andaman Family</h3>
                         <p>Valid only for 20th Dec</p>
                         <a href="#" className="btn">Ask For</a>
                     </div>

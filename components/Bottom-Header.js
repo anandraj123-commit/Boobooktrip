@@ -26,9 +26,10 @@ export default function BottomHeader() {
       <div className={`bottom-header ${sticky ? "sticky-header" : ""}`}>
         {/* LOGO */}
         <div className="bh-logo-container">
-          <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} />
-          <span className="bh-title">BOOBOOK TRIP</span>
-        </div>
+           <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} /> 
+           <div className="logo-text"> 
+            <span className="bh-title">BOOBOOK TRIP</span> 
+            </div> </div>
 
         {/* DESKTOP NAV */}
         <nav className="desktop-nav">

@@ -14,7 +14,7 @@ export default function TripContent(params){
                   alt={title}
                 />
   
-                <span className="discount-badge">{offer}</span>
+                <span className="discount-badge">{offer} Off</span>
                 <h3 className="package-title">{name}</h3>
   
                 <div className="price-tag">

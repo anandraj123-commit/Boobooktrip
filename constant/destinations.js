@@ -16,6 +16,12 @@ export const destinationsLists = [
                 name: 'Corbyn’s Cove Beach',
                 description: "Corbyn's Cove Beach is a serene and picturesque beach located about 6 km from Port Blair, the capital city of the Andaman and Nicobar Islands. This coconut-palm fringed beach offers a variety of activities, including swimming, sunbathing, and a range of water sports. Visitors can engage in thrilling activities like jet skiing, parasailing, sea karting, and scuba diving. The beach also provides opportunities for snorkeling and exploring the nearby Snake Island, known for its rich marine life.The beach is well-equipped with facilities like hotels, restaurants, bars, changing rooms, and adventure water sports. Historical remains like Japanese bunkers can be seen on the way to the beach.",
                 image: "/images/havelock-island.jpg"
+            },
+            {
+                id: 3,
+                name: 'Corbyn’s Cove Beach',
+                description: "Corbyn's Cove Beach is a serene and picturesque beach located about 6 km from Port Blair, the capital city of the Andaman and Nicobar Islands. This coconut-palm fringed beach offers a variety of activities, including swimming, sunbathing, and a range of water sports. Visitors can engage in thrilling activities like jet skiing, parasailing, sea karting, and scuba diving. The beach also provides opportunities for snorkeling and exploring the nearby Snake Island, known for its rich marine life.The beach is well-equipped with facilities like hotels, restaurants, bars, changing rooms, and adventure water sports. Historical remains like Japanese bunkers can be seen on the way to the beach.",
+                image: "/images/havelock-island.jpg"
             }
 
         ]

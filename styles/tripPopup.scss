@@ -1,0 +1,209 @@
+.tripPopup {
+    .custom-modal .modal-content {
+        background: transparent;
+        box-shadow: none;
+      }
+    
+      .custom-modal {
+        position: fixed;   // 🔥 critical
+        inset: 0;
+        z-index: 999999;   // now works correctly
+        background: rgba(0,0,0,.55);
+      }
+      
+      /* Modal dialog */
+      .custom-modal .modal-dialog {
+        position: relative;
+        z-index: 1000000;
+      }
+      
+      /* Modal content */
+      .custom-modal .modal-content {
+        position: relative;
+        z-index: 10001;
+      }
+      
+      .popup-hero {
+        position: relative;
+      }
+      
+      .popup-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      
+      .popup-overlay {
+        position: absolute;
+        bottom: 22px;
+        left: 22px;
+        color: white;
+        text-align: left;
+      }
+      
+      .popup-title {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      
+      .popup-location {
+        font-size: 16px;
+        opacity: 0.9;
+        margin-bottom: 14px;
+      }
+      
+      .popup-tags span {
+        background: rgba(0,0,0,0.45);
+        padding: 8px 14px;
+        margin-right: 6px;
+        border-radius: 30px;
+        font-size: 14px;
+      }
+      
+      .popup-price {
+        margin-top: 14px;
+        background: #dd2476;
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-weight: 700;
+        display: inline-block;
+      }
+      
+      .popup-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      
+        width: 36px;
+        height: 36px;
+      
+        color: #e74c3c !important;
+        background: transparent;
+        border: none;
+      
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 700;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        cursor: pointer;
+        z-index: 10;
+      
+        transition: 
+          transform 0.25s ease,
+          background-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      
+      /* Hover animation */
+      .popup-close:hover {
+        transform: rotate(90deg) scale(1.15);
+        background-color: rgba(231, 76, 60, 0.1);
+        box-shadow: 0 0 0 6px rgba(231, 76, 60, 0.15);
+        color: #e74c3c !important;
+      }
+      
+      /* Click (press) animation */
+      .popup-close:active {
+        transform: rotate(90deg) scale(0.95);
+        box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.25);
+      }
+      
+      /* Keyboard accessibility */
+      .popup-close:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.35);
+      }
+      
+    
+      .tick {
+        color: green;
+        font-size: 14px;
+      }
+    
+    /* Inquiry section */
+    .popup-inquiry {
+        background: #fff;
+        padding: 20px;
+      }
+      
+      /* Make form vertical */
+      .inquiry-form {
+        display: flex;
+        flex-direction: column;   /* 🔥 vertical */
+        gap: 16px;
+      
+        background: #fff;
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+      
+      /* Each field full width */
+      .inquiry-field {
+        width: 100%;
+        text-align: left;
+      }
+      
+      .inquiry-field label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      
+        font-size: 14px;
+        font-weight: 600;
+        color: #e63950;
+        margin-bottom: 6px;
+      }
+      
+      .inquiry-field input {
+        width: 100%;
+        height: 35px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 0 14px;
+        font-size: 14px;
+      }
+      
+      .inquiry-field input:focus {
+        border-color: #e63950;
+        outline: none;
+      }
+      
+      /* Full-width search button at bottom */
+      .inquiry-btn {
+        width: 100%;
+        height: 52px;
+      
+        background: #e73348;
+        border: none;
+        border-radius: 14px;
+      
+        color: #fff;
+        font-size: 18px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      
+      .inquiry-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(244, 124, 60, 0.35);
+      }
+      
+      .inquiry-error {
+        color: #e63950;
+        font-size: 13px;
+        margin-top: -8px;
+      }
+    }
+    
+    
+    

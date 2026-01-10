@@ -174,10 +174,10 @@ export default function TripSlider() {
   z-0"
               >
                 <p className="text-xl md:text-2xl font-extrabold text-center">
-                  GO
+                  Boobook
                 </p>
                 <p className="tracking-widest text-black mt-1 text-xs md:text-sm">
-                  Navigar
+                  Trip
                 </p>
               </div>
             </div>

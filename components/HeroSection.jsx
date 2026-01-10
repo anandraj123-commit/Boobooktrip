@@ -37,7 +37,7 @@ export default function HeroSection() {
 
       <div className="overlay-content container">
         <h4 className="fw-light fst-italic">Memories For Life</h4>
-        <h1 className="display-4 fw-bold">Let's Explore The Andaman & Nicobar</h1>
+        <h1 className="display-4 fw-bold explore" style={{color:"#e63950"}}>Let's Explore The Andaman & Nicobar</h1>
 
         <div className="search-box container mt-4">
           <div className="row g-3 align-items-center">

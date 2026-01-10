@@ -1,0 +1,295 @@
+.sight-section {
+
+  /* ================= MODAL BASE ================= */
+  .custom-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999 !important;
+  }
+
+  .custom-modal .modal-dialog {
+    z-index: 10000;
+  }
+
+  .custom-modal .modal-content {
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+  }
+
+  /* ================= HERO ================= */
+  .popup-hero {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .popup-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .popup-overlay {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .popup-title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .popup-location {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 14px;
+  }
+
+  .popup-tags span {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 8px 14px;
+    margin-right: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+
+  .popup-price {
+    margin-top: 14px;
+    background: #dd2476;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  /* ================= CLOSE BUTTON ================= */
+  .popup-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    color: #e74c3c;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .popup-close:hover {
+    transform: rotate(90deg) scale(1.15);
+    box-shadow: 0 0 0 6px rgba(231, 76, 60, 0.2);
+  }
+
+  /* ================= BODY ================= */
+  .popup-body {
+    background: #fff;
+    padding: 24px 28px;
+    overflow-y: auto;
+    flex: 1;
+    border-radius: 0 0 22px 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ================= INQUIRY ================= */
+  .popup-inquiry {
+    padding-bottom: 24px;
+  }
+
+  .inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inquiry-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e63950;
+  }
+
+  .inquiry-field input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 14px;
+  }
+
+  .inquiry-btn {
+    height: 52px;
+    background: #e73348;
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  /* ================= ITINERARY ================= */
+  .popup-itinerary {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .itinerary-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e73348;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .itinerary-wrapper {
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  }
+
+  /* ================= TABLE ================= */
+  .itinerary-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+
+    thead {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+
+      th {
+        padding: 16px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+    }
+
+    tbody tr {
+      background: #fff;
+      position: relative;
+      opacity: 0;
+      animation: fadeSlideUp 0.6s ease forwards;
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+
+      &:nth-child(even) {
+        background: #f9fafb;
+      }
+
+      &:hover {
+        transform: translateY(-3px) scale(1.01);
+        box-shadow:
+          0 12px 30px rgba(79, 70, 229, 0.18),
+          inset 6px 0 0 #6366f1;
+        z-index: 2;
+      }
+
+      td {
+        padding: 16px;
+        font-size: 0.95rem;
+        transition: background-color 0.3s ease;
+      }
+
+      &:hover td {
+        background-color: rgba(238, 242, 255, 0.6);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(99, 102, 241, 0.08),
+          transparent
+        );
+        opacity: 0;
+        transition: opacity 0.35s ease;
+        pointer-events: none;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  /* ================= DAY BADGE ================= */
+  .day-badge span {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .itinerary-table tbody tr:hover .day-badge span {
+    transform: scale(1.12);
+    box-shadow: 0 6px 14px rgba(79, 70, 229, 0.4);
+  }
+
+  /* ================= PLACE CHIPS ================= */
+  .places-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .place-chip {
+    background: #ecfeff;
+    color: #0369a1;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .itinerary-table tbody tr:hover .place-chip {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(2, 132, 199, 0.25);
+  }
+
+  /* ================= ICONS ================= */
+  .travel-col i,
+  .stay-col i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .itinerary-table tbody tr:hover .travel-col i,
+  .itinerary-table tbody tr:hover .stay-col i {
+    transform: scale(1.2);
+    color: #4f46e5;
+  }
+
+  /* ================= ANIMATION ================= */
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

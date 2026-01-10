@@ -24,7 +24,11 @@ export default function GetIntouch() {
 
                         {/* LEFT CONTENT */}
                         <div className="col-md-6 mb-5 mb-md-0">
-                            <button className="title-btn mb-4">GET IN TOUCH WITH US</button>
+                        <a href="tel:+917484052727" className="text-decoration-none">
+                                <button className="title-btn mb-4">
+                                    GET IN TOUCH WITH US
+                                </button>
+                            </a>
 
                             <h1 className="fw-bold display-4">GET BEST TRAVEL DEALS</h1>
 
@@ -36,16 +40,24 @@ export default function GetIntouch() {
                             </p>
 
                             <div className="help-line-box mt-4">
-                                Help line: +91-7484052727
+                                Help line:{" "}
+                                <a href="tel:+917484052727" className="text-white">
+                                    +91-7484052727
+                                </a>
                             </div>
 
                             <div className="mt-4 d-flex gap-3">
                                 {/* <button className="btn btn-primary btn-custom">
                                     BOOK NOW
                                 </button> */}
-                                <button className="btn btn-info btn-custom text-white">
+
+                                {/* CALL BUTTON */}
+                                <a
+                                    href="tel:+917484052727"
+                                    className="btn btn-info btn-custom text-white"
+                                >
                                     CONTACT NOW
-                                </button>
+                                </a>
                             </div>
                         </div>
 

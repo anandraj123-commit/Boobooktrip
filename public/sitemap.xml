@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://boobook.in/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/about-us</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/contact-us</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/privacy</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/trip/iconic-andaman</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/trip/visit-andaman</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/andaman-exotica</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/explore-andaman</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/unique-andaman</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/andaman-family</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/andaman-honeymoon</loc>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://boobook.in/trip/andaman-couple</loc>
+    <priority>0.6</priority>
+  </url>
+
+
+   <url>
+    <loc>https://boobook.in/destinations/port-blair</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/destinations/havelock-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/destinations/neil-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/destinations/baratang-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/destinations/diglipur-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+   <url>
+    <loc>https://boobook.in/destinations/rangat-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/destinations/long-island</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://boobook.in/destinations/mayabunder-island</loc>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

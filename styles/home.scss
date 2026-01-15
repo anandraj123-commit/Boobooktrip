@@ -3,12 +3,12 @@
 .hero-section {
   position: relative;
   height: 80vh;
-  overflow: hidden;
+  overflow: visible;
 
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/profile-image.jpg") center/cover no-repeat;
+    background: url("/images/boobooktrip-cover-picture.png") center/cover no-repeat;
     animation: bulge 12s ease-in-out infinite;
     z-index: 0;
   }
@@ -51,7 +51,7 @@
     }
 
     .search-btn {
-      background: $primary-color;
+      background: #e63946;;
       border: none;
       width: 60px;
       height: 60px;
@@ -353,6 +353,7 @@
     font-size: 40px;
     color: #1d3557;
     font-weight: 700;
+    margin-top:30px;
   }
 
   .heading span {

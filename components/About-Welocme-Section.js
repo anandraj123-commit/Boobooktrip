@@ -7,11 +7,11 @@ export default function AboutWelcomeSection() {
           {/* LEFT CONTENT */}
           <div className="col-lg-6">
             <h3 className="welcome-title">
-              Hi! Welcome to <span>Holiday Tour & Travels</span>
+              Hi! Welcome to <span>Boobook Trip</span>
             </h3>
 
             <h5 className="welcome-subtitle fst-italic">
-              Experience comfortable and easy travel with trusted services.
+            Book your journey with comfort and confidence.
             </h5>
 
             <p className="welcome-text">

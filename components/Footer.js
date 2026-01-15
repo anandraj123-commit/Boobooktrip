@@ -19,7 +19,7 @@ export default function Footer() {
       {/* ================= OFFER SECTION ================= */}
       <div className="offer-section">
         <div className="offer-card">
-          <img src="/images/port-blair.jpg" alt="Offer Image" />
+          <img src="/images/Visit_Andaman.png" alt="Offer Image" />
           <div className="offer-content">
             <h2><span>5%</span> OFF</h2>
             <h3>Visit Andaman</h3>
@@ -31,10 +31,22 @@ export default function Footer() {
         </div>
 
         <div className="offer-card">
-          <img src="/images/havelock-island.jpg" alt="Offer Image" />
+          <img src="/images/Family_Trip.png" alt="Offer Image" />
           <div className="offer-content">
             <h2><span>10%</span> OFF</h2>
             <h3>Andaman Family</h3>
+            <p>Valid only for 20th Dec</p>
+            <button type="button" className="btn" onClick={() => setSelectedTrip(tripLists[1])}>
+              Ask For
+            </button>
+          </div>
+        </div>
+
+        <div className="offer-card">
+          <img src="/images/Iconic_Andaman.png" alt="Offer Image" />
+          <div className="offer-content">
+            <h2><span>10%</span> OFF</h2>
+            <h3>Iconic Andaman</h3>
             <p>Valid only for 20th Dec</p>
             <button type="button" className="btn" onClick={() => setSelectedTrip(tripLists[1])}>
               Ask For
@@ -62,10 +74,10 @@ export default function Footer() {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h3>Holiday Tour & Travels</h3>
+          <h3>Boobook Trip</h3>
           <p>
             World's leading tour and travels booking website,
-            over 30,000 packages worldwide.
+            over 300 packages worldwide.
           </p>
         </div>
 
@@ -102,7 +114,7 @@ export default function Footer() {
           <h3>Follow With Us</h3>
           <p>
             Join thousands of happy travelers—discover why so many choose
-            Boobooktrip for unforgettable journeys.
+            Boobook Trip for unforgettable journeys.
           </p>
           <div className="social-icons">
             <i className="fab fa-facebook"></i>

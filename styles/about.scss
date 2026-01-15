@@ -5,9 +5,9 @@
    ABOUT HERO SECTION
 ======================= */
 .about-hero {
-  position: relative;
-  height: 60vh;
-  background: url('/images/hero.jpg') center/cover no-repeat;
+  width: 100%;
+  aspect-ratio: 1920 / 700; /* match your image ratio */
+  background: url('/images/Boobooktrip-aboutUs.png') center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

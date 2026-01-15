@@ -29,26 +29,26 @@ export default async function DestinationPage({ params }) {
         <aside className="w-64 bg-gray-200 p-5 rounded-2xl h-fit sticky top-[140px] self-start">
           <h2 className="text-xl font-semibold mb-4">Top Destinations</h2>
 
-         <div className="flex flex-col gap-3">
-  {destinationsLists.map((d) => {
-    const isActive = cleanedSlug === d.slug.toLowerCase();
-    return (
-      <Link
-        key={d.id}
-        href={`/destinations/${d.slug}`}
-        className={`
+          <div className="flex flex-col gap-3">
+            {destinationsLists.map((d) => {
+              const isActive = cleanedSlug === d.slug.toLowerCase();
+              return (
+                <Link
+                  key={d.id}
+                  href={`/destinations/${d.slug}`}
+                  className={`
           block p-4 rounded-xl border shadow-sm transition-all duration-200 font-bold no-underline
           ${isActive
-            ? "bg-[#c91f35] text-white border-[#c91f35] shadow-md text-lg"
-            : "bg-white text-black border-gray-200 hover:bg-gray-100"
-          }
+                      ? "bg-[#c91f35] text-white border-[#c91f35] shadow-md text-lg"
+                      : "bg-white text-black border-gray-200 hover:bg-gray-100"
+                    }
         `}
-      >
-        {d.name}
-      </Link>
-    );
-  })}
-</div>
+                >
+                  {d.name}
+                </Link>
+              );
+            })}
+          </div>
         </aside>
 
         {/* RIGHT CONTENT */}
@@ -64,7 +64,7 @@ export default async function DestinationPage({ params }) {
           <DestinationDescription destination={destination} />
 
           {/* TOP PLACES */}
-          <div className="mt-12">
+          { destination?.locations.length > 0 && <div className="mt-12">
             <h3 className="text-2xl font-semibold mb-4">
               Top Places in {destination.name}
             </h3>
@@ -89,7 +89,7 @@ export default async function DestinationPage({ params }) {
                 </div>
               ))}
             </div>
-          </div>
+          </div> }
 
         </main>
 

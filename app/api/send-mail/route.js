@@ -142,8 +142,6 @@ export async function POST(req) {
     // ---- SEND ----
     await sendMail({
       to : [
-        "help@boobook.in",
-        "support@boobook.in",
         "noreplyboobooktrip@gmail.com",
       ], 
       ...mailOptions,

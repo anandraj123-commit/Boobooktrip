@@ -18,9 +18,9 @@ export default function PrivacyPolicy() {
 
             {/* Content Section */}
             <section className="container py-5">
-                <h2 className="fw-bold mb-3">Boobooktrip Privacy Policy</h2>
+                <h2 className="fw-bold mb-3">Boobook Trip Privacy Policy</h2>
                 <p className="text-muted">
-                    Boobooktrip is committed to ensuring that all your information is
+                    Boobook Trip is committed to ensuring that all your information is
                     protected. If we ask you to provide certain details by which you can
                     be identified while using our official website www.Boobook.in,
                     then you can be assured that your details will only be used as per our
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
                 </p>
 
                 <p className="text-muted">
-                    Boobooktrip may change its privacy policy from time to time by
+                    Boobook Trip may change its privacy policy from time to time by
                     updating this page. You are requested to check it regularly to ensure
                     that you are aware of the changes.
                 </p>
@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
                 <div className="privacy-section">
                     <h2 className="section-title">What We Collect</h2>
                     <p className="text-muted">
-                        Boobooktrip may collect certain information including the following:
+                        Boobook Trip may collect certain information including the following:
                     </p>
 
                     <ul className="privacy-list">

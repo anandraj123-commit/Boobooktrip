@@ -43,7 +43,7 @@ export default function TopDestinations() {
                             <div className="col-6">
                                 <div className="destination-card small-card">
                                     <img 
-                                        src="/images/top_destination_havelock_island.jpg"
+                                        src="/images/havelock-island.jpg"
                                         alt="top_destination_havelock_island"
                                     />
                                     <div className="content">
@@ -53,14 +53,26 @@ export default function TopDestinations() {
                                 </div>
                             </div>
 
+                           
+
                             <div className="col-6">
                                 <div className="destination-card small-card">
                                     <img 
-                                        src="/images/top_destinations_neil_island.jpg"
-                                        alt="India"
+                                        src="/images/barren-island.jpg"
+                                        alt="USA"
                                     />
                                     <div className="content">
-                                        <h2>Neil Island</h2>
+                                        <h2>Barren Island</h2>
+                                        <p>Starting from Rs4800</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-6">
+                                <div className="destination-card small-card">
+                                    <img src="images/baratang-island.jpg" />
+                                    <div className="content">
+                                        <h2>Baratang Island </h2>
                                         <p>Starting from Rs2400</p>
                                     </div>
                                 </div>
@@ -69,24 +81,11 @@ export default function TopDestinations() {
                             <div className="col-6">
                                 <div className="destination-card small-card">
                                     <img 
-                                        src="/images/top_destination_long_island.jpg"
-                                        alt="USA"
+                                        src="/images/neil-island.png"
+                                        alt="India"
                                     />
                                     <div className="content">
-                                        <h2>Long Island</h2>
-                                        <p>Starting from Rs4800</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-6">
-                                <div className="destination-card small-card">
-                                    <img 
-                                        src="images/top_destination_rangat_island.jpg"
-                                        alt="London"
-                                    />
-                                    <div className="content">
-                                        <h2>Rangat Island </h2>
+                                        <h2>Neil Island</h2>
                                         <p>Starting from Rs2400</p>
                                     </div>
                                 </div>

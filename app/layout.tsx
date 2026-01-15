@@ -112,6 +112,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  const logoStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BOOBOOK TRIP",
+    "url": "https://boobook.in",
+    "logo": "https://boobook.in/logo.jpg", // Make sure this is your actual logo URL
+    "sameAs": [
+      "https://www.facebook.com/tripboobook",
+      "https://x.com/BoobookTrip",
+      "https://www.instagram.com/boobooktrip",
+      "https://www.linkedin.com/company/boobook-trip"
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
@@ -141,6 +156,12 @@ export default function RootLayout({
             gtag('config', 'AW-11278403090');
           `}
         </Script>
+
+        <Script
+          id="logo-json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(logoStructuredData) }}
+        />
       </head>
 
       <body className="min-h-screen overflow-visible">

@@ -248,6 +248,7 @@ export default function ContactSection() {
                 <i className="bi bi-envelope-fill icon-blue"></i>
                 <h5>Mail Us</h5>
                 <p>
+                  For Support:&nbsp;
                   <a
                     href="mailto:support@boobook.in"
                     className="text-decoration-none"
@@ -255,6 +256,17 @@ export default function ContactSection() {
                     support@boobook.in
                   </a>
                 </p>
+
+                <p>
+                  For Help:&nbsp;
+                  <a
+                    href="mailto:help@boobook.in"
+                    className="text-decoration-none"
+                  >
+                    help@boobook.in
+                  </a>
+                </p>
+
               </div>
             </div>
 

@@ -2,9 +2,7 @@ export default function TravelCondition() {
     return (
         <section id="travelcondition" className="py-5">
         <div className="container">
-    
             <div className="row g-5 align-items-start">
-    
                 <div className="col-md-6">
     
                     <h4 className="section-title mb-4">TIPS BEFORE TRAVEL</h4>
@@ -30,7 +28,7 @@ export default function TravelCondition() {
                         <div className="ms-4">
                             <h5 className="fw-bold m-0">Register with your embassy</h5>
                             <p className="m-0 mt-2">
-                            Your travel plan made easy with BoobookTrip.
+                            Your travel plan made easy with Boobook Trip.
                             </p>
                         </div>
                     </div>

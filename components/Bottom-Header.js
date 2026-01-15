@@ -24,28 +24,41 @@ export default function BottomHeader() {
       {/* HEADER */}
       <div className={`bottom-header ${sticky ? "sticky-header" : ""}`}>
         {/* LOGO + TEXT */}
-        <div className="bh-logo-container" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          {/* Logo */}
-          <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} />
+        <Link href="/" style={{ textDecoration: "none" }}>
+  <div
+    className="bh-logo-container"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      cursor: "pointer",
+    }}
+  >
+    {/* Logo */}
+    <Image src="/Boobook_trip_logo.jpg" alt="Logo" width={70} height={70} />
 
-          {/* Title + Tagline */}
-          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}>BOOBOOK TRIP</span>
-            <span
-              style={{
-                fontFamily: "'Brush Script MT', cursive",
-                fontSize: "0.85rem",
-                color: "#e73348",
-                fontWeight: 500,
-                letterSpacing: "0.5px",
-                animation: "fadeMove 2s ease-in-out infinite alternate",
-                marginTop: "0px",
-              }}
-            >
-              Making Trip Planning Easier For You
-            </span>
-          </div>
-        </div>
+    {/* Title + Tagline */}
+    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+      <span style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}>
+        BOOBOOK TRIP
+      </span>
+      <span
+        style={{
+          fontFamily: "'Brush Script MT', cursive",
+          fontSize: "0.85rem",
+          color: "#e73348",
+          fontWeight: 500,
+          letterSpacing: "0.5px",
+          animation: "fadeMove 2s ease-in-out infinite alternate",
+          marginTop: "0px",
+        }}
+      >
+        Making Trip Planning Easier For You
+      </span>
+    </div>
+  </div>
+</Link>
+
 
         {/* DESKTOP NAV */}
         <nav className="desktop-nav">

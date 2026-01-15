@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+  background: url("/images/boobooktrip-contactUs-page.png")
     center/cover no-repeat;
   filter: blur(0px); /* Blur ONLY background */
   transform: scale(1.05); /* Prevent edges from showing */
@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  // background: rgba(0, 0, 0, 0.55);
   z-index: 2;
 }
 

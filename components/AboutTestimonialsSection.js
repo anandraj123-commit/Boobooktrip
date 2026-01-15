@@ -101,12 +101,12 @@ export default function AboutTestimonialsSection() {
 
             <div className="d-flex gap-5 mt-4">
               <div>
-                <h2 className="green"><span className="counter" data-target="25">0</span>+</h2>
-                <p className="text-light">Happy People</p>
+                <h2 className="green"><span className="counter" data-target="3000">0</span>+</h2>
+                <p className="text-light">Happy Guest</p>
               </div>
 
               <div>
-                <h2 className="green"><span className="counter" data-target="300">0</span>+</h2>
+                <h2 className="green"><span className="counter" data-target="4.9">0</span>+</h2>
                 <p className="text-light">Overall Rating</p>
               </div>
             </div>

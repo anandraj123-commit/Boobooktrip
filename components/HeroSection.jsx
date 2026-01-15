@@ -35,11 +35,60 @@ export default function HeroSection() {
     <div className="hero-section">
       <div className="hero-bg"></div>
 
-      <div className="overlay-content container">
-        <h4 className="fw-light fst-italic">Memories For Life</h4>
-        <h1 className="display-4 fw-bold explore" style={{color:"#e63950"}}>Let's Explore The Andaman & Nicobar</h1>
+      <div className="overlay-content container text-start">
+  {/* TAGLINE */}
+  <h5
+    className="fw-light fst-italic mb-2"
+    style={{
+      color: "#ffffff",
+      letterSpacing: "1px",
+      maxWidth: "600px",
+    }}
+  >
+    Beyond Travel, Into the Heart of the Andamans.
+  </h5>
 
-        <div className="search-box container mt-4">
+  {/* WELCOME TEXT */}
+  <h2
+    className="fw-normal text-uppercase mb-1"
+    style={{
+      color: "#ffffff",
+      letterSpacing: "4px",
+    }}
+  >
+    Welcome To
+  </h2>
+
+  {/* MAIN TITLE */}
+  <h1
+  className="fw-bold"
+  style={{
+    color: "#ffffff",
+    fontSize: "5.8rem",
+    fontWeight: 900,          // 👈 MUCH bolder
+    letterSpacing: "2px",     // 👈 adds visual weight
+    lineHeight: "1",
+  }}
+>
+  ANDAMAN
+</h1>
+
+  {/* DESCRIPTION */}
+  <p
+    className="mt-3"
+    style={{
+      color: "#ffffff",
+      maxWidth: "520px",
+      fontSize: "14px",
+      letterSpacing: "0.6px",
+      lineHeight: "1.6",
+    }}
+  >
+    Where the ocean sings softly and green islands shine like gems, the
+    Andamans invite you to explore.
+  </p>
+
+        <div className="search-box container mt-73">
           <div className="row g-3 align-items-center">
 
             {/* LOCATION */}

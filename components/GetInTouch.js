@@ -36,7 +36,7 @@ export default function GetIntouch() {
                                 className="mt-4 text-white-50"
                                 style={{ fontSize: "18px" }}
                             >
-                               Get the best travel deals on hotels, holiday packages, and more. At Boobooktrip, we make every journey smoother, easier, and more enjoyable.
+                               Get the best travel deals on hotels, holiday packages, and more. At Boobook Trip, we make every journey smoother, easier, and more enjoyable.
                             </p>
 
                             <div className="help-line-box mt-4">
